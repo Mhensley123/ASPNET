@@ -14,7 +14,7 @@ namespace Testing.Controllers
         public IActionResult Index()
         {
             var products = repo.GetAllProducts();
-            return View();
+            return View(products);
         }
 
         public IActionResult ViewProduct(int id)
@@ -69,4 +69,5 @@ namespace Testing.Controllers
 
 
     }
+
 }
